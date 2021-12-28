@@ -3,19 +3,18 @@
         v-bind:style="{
             background: '#AA0001'
         }"
-        v-if="!is_link" class="v-Btn btn btn-danger" :type="type">{{ label }}</button>
+        v-if="!is_link" class="v-Btn btn btn-danger" :type="type"><slot /></button>
     <a 
         v-bind:style="{
             background: '#AA0001',
             color: 'white'
         }"
-        v-else :href="href" class="v-Btn btn btn-danger">{{ label }}</a>
+        v-else :href="href" class="v-Btn btn btn-danger"><slot /></a>
 </template>
 
 <script>
     export default {
         props: [
-            'label',
             'is_link', 'type', 'href'
         ]
     }

@@ -3,15 +3,15 @@
         <div class="Header__contacts">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-left">
-                        <a href="">Алматы</a>
-                        <a href="" class="phone"><i class="fa fa-phone"></i> +7 (727) 356-99-21</a>
-                        <a href="">+7 (812) 424-43-62</a>
+                    <div class="col-md-6 text-left Header__contacts__items">
+                        <a href=""><i class="text-danger fa fa-map-marker"></i>&nbsp; Алматы</a>
+                        <a href="" class="phone"><i class="text-danger fa fa-phone"></i>&nbsp; +7 (727) 356-99-21</a>
+                        <a href=""><i class="text-danger fa fa-phone"></i>&nbsp; +7 (812) 424-43-62</a>
                     </div>
                     <div class="col-md-6 text-right">
-                        <Btn is_link="1" href="#" label="Важно" />
+                        <Btn is_link="1" href="#">Важно</Btn>
 
-                        <Btn is_link="1" href="#" label="Добавить объявление" />
+                        <Btn is_link="1" href="#" label="Добавить объявление">Важно</Btn>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
     </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
     .Header {
         width: 100%;
     }
